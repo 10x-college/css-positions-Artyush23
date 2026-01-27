@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: rgba(25, 161, 174, 1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.box_1, .box_2 {
+  position: fixed;
+  width: 978px;
+  height: 976px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+}
+
+.box_1 { top: 50%; left: 50%; transform: translate(10%, 10%); }
+.box_2 { bottom: 50%; right: 50%; transform: translate(-10%, -10%); }
+
+.profile {
+  width: 350px;
+  height: 374px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  z-index: 10;
+  box-shadow: 0 50px 100px -20px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile_card {
+  height: 144px;
+  background-color: #3ACFD5;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+}
+
+.ellipse, .circle {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    margin: 4px;
+    
+}
+
+.layer3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.ellipse-group, .circle-group {
+    display: flex;
+    white-space: nowrap;
+}
+
+.circle-group {
+    margin-left: -40px; 
+}
+
+.ellipse-group2 {
+    margin-left: 20px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -300px;
+}
+
+figure img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 5px solid var(--colors-white, rgba(255, 255, 255, 1)); 
+  margin-top: 100px;
+  background-color: white;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  z-index: 20;
+}
+
+figcaption {
+  text-align: center;
+  margin: 24px 0;
+}
+
+h2 {
+  font-size: 18px;
+  color: #2D323E;
+}
+
+h2 span {
+  color: #6B7082;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+figcaption p {
+  color: #6B7082;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+  border-top: 1px solid #E8E9EC;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 18px;
+  color: #2D323E;
+  justify-content: flex-end;
+}
+
+.stats span {
+  font-size: 10px;
+  color: #6B7082;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  justify-content: flex-end;
+}
